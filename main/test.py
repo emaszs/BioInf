@@ -55,10 +55,6 @@ for i in range(len(humanSequence.seq)):
     for sequence in alignedNoHuman:
         if sequence.seq[i] == humanSequence.seq[i]:
             currentSum += 1
-        elif sequence.seq[i] == "-":
-            # Jei stulpelyje rastas tarpas, jis nebus lyginamas su kitais
-            currentSum = None
-            break
     sumArray.append(currentSum)
     
 print (sumArray) 
