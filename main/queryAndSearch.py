@@ -4,7 +4,6 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from subprocess import call
 
-"""
 enterez_query = 'mammals[Organism]'
 ncbi = NCBIWWW.qblast(program="blastp" , database="swissprot", 
                                 sequence="4504347", 
@@ -28,7 +27,7 @@ SeqIO.write(writeArray, "sequences.faa", "fasta")
 # muscle.exe failas turi buti prieinamas visoje operacineje sistemoje
 muscleCommand = "muscle -in sequences.faa -out sequences.afa"
 call(muscleCommand)
-"""
+
 alignedSequences =  AlignIO.read("sequences.afa", "fasta")
 
 humanSequence = None
